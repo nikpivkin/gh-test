@@ -6,7 +6,7 @@ on:
     tags:
       - 'v*'
 env:
-  IMAGE_NAME: 'scan2html'
+  IMAGE_NAME: 'gh-test'
   REGISTRY: 'ghcr.io'
   TRIVY_VERSION: ${{ vars.TRIVY_VERSION }}
 
