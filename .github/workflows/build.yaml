@@ -10,7 +10,7 @@ on:
 env:
   IMAGE_NAME: 'scan2html'
   REGISTRY: 'ghcr.io'
-  TRIVY_VERSION: ${{ vars.TRIVY_VERSION || "0.40.0" }}
+  TRIVY_VERSION: ${{ vars.TRIVY_VERSION || '0.40.0' }}
 
 jobs:
   build:
