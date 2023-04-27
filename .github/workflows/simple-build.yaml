@@ -1,0 +1,14 @@
+name: Simple build
+
+on:
+  workflow_call:
+  
+jobs:
+  check-version:
+    uses: nikpivkin/gh-test/.github/workflows/check-version.yaml@main
+    
+  release:
+    needs: check-version
+    uses: nikpivkin/gh-test/.github/workflows/release-go.yaml@main
+    with: 
+      next-version: ${{ needs.check-version.outputs.next-version }}
