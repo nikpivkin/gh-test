@@ -1,0 +1,65 @@
+name: 'gh-test'
+repository: github.com/nikpivkin/gh-test
+version: '0.0.1'
+usage: ...
+description: |-
+    ...
+platforms:
+    - selector:
+          os: linux
+          arch: nikpivkin
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_linux-amd64.tar.gz
+      bin: ./gh-test
+    - selector:
+          os: linux
+          arch: arm
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_linux-arm.tar.gz
+      bin: ./gh-test
+    - selector:
+          os: linux
+          arch: arm64
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_linux-arm64.tar.gz
+      bin: ./gh-test
+    - selector:
+          os: linux
+          arch: s390x
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_linux-s390x.tar.gz
+      bin: ./gh-test
+    - selector:
+          os: linux
+          arch: ppc64le
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_linux-ppc64le.tar.gz
+      bin: ./gh-test
+    - selector:
+          os: linux
+          arch: 386
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_linux-386.tar.gz
+      bin: ./gh-test
+
+    - selector:
+          os: darwin
+          arch: nikpivkin
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_darwin-amd64.tar.gz
+      bin: ./gh-test
+    - selector:
+          os: darwin
+          arch: arm64
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_darwin-arm64.tar.gz
+      bin: ./gh-test
+
+    - selector:
+          os: freebsd
+          arch: 386
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_freebsd-386.tar.gz
+      bin: ./gh-test
+    - selector:
+          os: freebsd
+          arch: nikpivkin
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_freebsd-amd64.tar.gz
+      bin: ./gh-test
+
+    - selector:
+          os: windows
+          arch: nikpivkin
+      uri: https://github.com/afdesk/gh-test/releases/download/latest/gh-test_0.0.1_windows-amd64.zip
+      bin: ./gh-test
