@@ -1,0 +1,21 @@
+name: Test build
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - 'plugin.yaml'
+    workflow_dispatch:
+    
+jobs:
+  check-version:
+    uses: nikpivkin/gh-test/.github/workflows/check-version.yaml@main
+    
+  release:
+    needs: check-version
+    uses: nikpivkin/gh-test/.github/workflows/release-go.yaml@main
+    with: 
+      next-version: ${{ needs.check-version.outputs.next-version }}
+      secrets: inherit
+  
