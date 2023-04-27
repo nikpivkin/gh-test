@@ -1,6 +1,6 @@
 name: 'gh-test'
 repository: github.com/nikpivkin/gh-test
-version: '0.0.1'
+version: '0.0.2'
 usage: ...
 description: |-
     ...
