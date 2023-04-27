@@ -20,5 +20,4 @@ jobs:
     uses: nikpivkin/gh-test/.github/workflows/release-go.yaml@main
     with: 
       next-version: ${{ needs.check-version.outputs.next-version }}
-      secrets: inherit
   
